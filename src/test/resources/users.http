@@ -1,0 +1,28 @@
+### List Users
+GET http://localhost:8080/users
+
+
+### Get User by Id
+GET http://localhost:8080/users/a0ea9b2c-c922-445f-860f-9976234c817a
+
+### Create User
+POST http://localhost:8080/users
+Content-Type: application/json
+
+{
+  "firstName": "Joe",
+  "lastName": "Smith",
+  "birthDate": "1990-01-01"
+}
+
+### Add Address to User
+PATCH http://localhost:8080/users/a0ea9b2c-c922-445f-860f-9976234c817a/addresses
+Content-Type: application/json
+
+{
+  "street": "125 Main St",
+  "city": "Orlando",
+  "country": "USA",
+  "state": "FL",
+  "zip": "12345"
+}
